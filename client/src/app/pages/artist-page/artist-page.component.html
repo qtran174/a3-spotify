@@ -24,7 +24,11 @@
 			<!--TODO: display artist name-->
 			<h3>{{ artist.name }}'s Top Tracks</h3>
 			<!--TODO: display the artist's top tracks-->
-			<app-track-list [tracks]="topTracks"></app-track-list>
+
+			<div class="table-responsive">
+				<app-track-list [tracks]="topTracks"></app-track-list>
+			</div>
+			
 		</div>
 	</div>
 }
