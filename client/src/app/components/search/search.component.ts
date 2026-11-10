@@ -13,10 +13,12 @@ import { ResourceData } from '../../data/resource-data';
     standalone: false
 })
 export class SearchComponent implements OnInit {
-  searchString:string;
+  searchString:string = '';
   searchCategory:string = 'artist';
   searchCategories:string[] = ['artist', 'album', 'track'];
-  resources:ResourceData[];
+  resources:ResourceData[] = [];
+
+  resultCategory:string = '';
 
   constructor(private spotifyService:SpotifyService) { }
 
@@ -25,6 +27,13 @@ export class SearchComponent implements OnInit {
 
   search() {
     //TODO: call search function in spotifyService and parse response
+    const category = this.searchCategory;
+
+    this.resultCategory = '';
+    this.spotifyService.searchFor(category, this.searchString).then((data) => {
+      this.resources = data;
+      this.resultCategory = category;
+    });
   }
 
 }
