@@ -1,5 +1,7 @@
 #artistImg {
+	width: 100%; 
 	max-width: 400%;
+	height: auto;
 }
 
 app-artist {
