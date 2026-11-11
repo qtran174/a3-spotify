@@ -7,3 +7,10 @@
 app-artist {
 	vertical-align: middle;
 }
+a:not(.btn) {
+	color: #0d6efd;
+}
+
+a:not(.btn):hover {
+	color: #0a58ca;
+}
