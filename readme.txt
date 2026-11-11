@@ -40,5 +40,6 @@ No I didn't. I just polishing the css to scale when I adjust the browser.
 
 
 6. Is there anything special we need to know in order to run your code?
-No
+There is a problem I notice. So basically everytime my PC or laptop is shutdown, before doing the search, it has to load the data like at first search so it takes normally some second.
+What concern me is that sometimes I don't know why it takes up until 30 second or more. I only experience this few times but overall, it doesn't often take that long.
 
